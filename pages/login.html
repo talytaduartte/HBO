@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"> <img src="/src/images/logo.svg" alt=""> </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="formContent blur"> 
+            <h2>Entrar</h2>
+        <form>
+            <div class="floating-label">      
+                <input  type="email" name="email"  required>
+                <label>Endereço de e-mail</label>
+            </div><!--floating-label-->
+
+            <div class="floating-label"> 
+                <input type="password" name="password" required>
+                <label>Senha</label>
+                <i class="fas fa-eye toggle-password white-icon"></i>
+                    <script>const togglePassword = document.querySelector('.toggle-password');
+                            const passwordInput = document.querySelector('input[name="password"]');
+                            togglePassword.addEventListener('click', function() {
+                            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                            passwordInput.setAttribute('type', type);
+                            // Alternar classe para exibir/ocultar ícone do olho
+                            togglePassword.classList.toggle('fa-eye');
+                            togglePassword.classList.toggle('fa-eye-slash');
+                            });
+                    </script>
+            </div><!--floating-label-->
+
+            <input class="entrar" type="submit" name="submit" value="ENTRAR">
+            <input class="entrar2" type="submit" name="submit" value="ENTRAR COM UM PROVEDOR">
+
+            <div class="remember">
+                <div class="signup"> Não tem uma conta? <a href="../index.html">Cadastre-se</a>
+                </div>
+                <div class="recuperar">
+                    <a href="#">Esqueceu a senha? Precisa de ajuda para entrar?</a>
+                </div>
+            </div><!--remeber-->
+
+        </form>
+        </div>
+
+    </div><!--container-->
+
+
+
+    <footer>
+        <div class="footer">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Informações</a>
+            <a href="#">Português (Brasil)</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
