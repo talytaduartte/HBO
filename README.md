@@ -23,4 +23,4 @@ O objetivo deste projeto é reproduzir a interface da HBO Max, proporcionando ao
 
 ## Acesse o Projeto no Link Abaixo
 
-[Link do Projeto]()
+[Link do Projeto](https://talytaduartte.github.io/HBO/)
