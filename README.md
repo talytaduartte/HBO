@@ -23,4 +23,4 @@ O objetivo deste projeto é reproduzir a interface da HBO Max, proporcionando ao
 
 ## Acesse o Projeto no Link Abaixo
 
-[Link do Projeto](https://talytaduartte.github.io/HBO/)
+[Link do Projeto](https://main--iridescent-cobbler-d6189b.netlify.app/)
