@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"> <img src="/src/images/logo.svg" alt=""> </a>
+        </div>
+
+        <div class="entrar">
+            <a href="/pages/login.html">entrar</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        
+        <div class="formContent blur"> 
+            <div class="banner">
+                <div class="produto">MultiTelas</div>
+                <div class="preco">R$ 34,90/mês <a href="../index.html"><button type="button" class="price" style="cursor: pointer;""><span class="price" aria-label="Alterar plano" role="button" tabindex="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="ce__CallToAction__editIcon"><path d="M10.7971 11.7933L7.5 12.4998L8.20652 9.20274L15.7428 1.6665L18.3333 4.25708L10.7971 11.7933Z" stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.2082 2.2915H2.2915V17.7082H17.7082V8.95817" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></a>
+                </div> </div>
+
+                <div class="textos">
+                    <p>PASSO 1 DE 3</p>
+                    <h1>Criar Conta</h1>
+                    <span>Tenha acesso a uma grande variedade de entretenimento em qualquer lugar, a qualquer momento.</span>
+                    </div>
+                
+            <form>
+                <div class="formContent">
+
+                    
+                    <div class="nome-sobre">
+                        <div class="floating-label nome">
+                            <input class="nome" type="text" name="nome" style="width: 309px;" required>
+                            <label>Nome</label>
+                        </div>
+                
+                        <div class="floating-label sobrenome">
+                            <input class="nome" type="text" name="sobrenome" style="width: 309px;" required>
+                            <label>Sobrenome</label>
+                        </div>
+                    </div>
+            
+                    <div class="floating-label">
+                        <input type="email" name="email" required>
+                        <label>Endereço de e-mail</label>
+                    </div>
+            
+                    <div class="floating-label">
+                        <input type="email" name="confirmar-email" required>
+                        <label>Confirmação de e-mail</label>
+                    </div>
+            
+                    <div class="floating-label">
+                        <input type="password" name="senha" required>
+                        <label>Senha</label>
+                        <i class="fas fa-eye toggle-password white-icon" style="color: white;"></i>
+                        <script>
+                            const togglePassword = document.querySelector('.toggle-password');
+                            const passwordInput = document.querySelector('input[name="senha"]');
+                            togglePassword.addEventListener('click', function() {
+                                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                                passwordInput.setAttribute('type', type);
+                                // Alternar classe para exibir/ocultar ícone do olho
+                                togglePassword.classList.toggle('fa-eye');
+                                togglePassword.classList.toggle('fa-eye-slash');
+                            });
+                        </script>
+                    </div><!--floating-label-->
+                    <span class="text-pass">A senha deve ter pelo menos 8 caracteres e incluir um número ou caractere especial.
+                    </span>
+            
+                    <div class="banner-2">
+                        <p>Ao clicar em Criar conta, você confirma que você tem pelo menos 18 anos, que concorda com os Termos de Uso e que leu nossa Política de Privacidade. Você também confirma que aceita receber publicidade, promoções e outras ofertas da HBO Max e de suas Afiliadas por e-mail, redes sociais e outros canais. Caso você crie um Perfil infantil, você concorda com o tratamento das informações pessoais coletadas por meio desse perfil conforme descrito na Política de Privacidade, caso esse consentimento seja necessário no local onde você reside.</p>
+                    <input class="criar-conta" type="submit" name="submit" value="CRIAR CONTA">
+                    </div>
+
+                    <p class="aviso">Para recusar a participação a qualquer momento ou saber mais sobre seus direitos e como exercê-los, consulte as opções disponíveis na Política de Privacidade.</p>
+                </div><!--formContent-->
+            </form>
+            
+        </div>
+
+    </div><!--container-->
+
+
+
+    <footer>
+        <div class="footer">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Informações</a>
+            <a href="#">Português (Brasil)</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
